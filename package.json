@@ -12,6 +12,9 @@
   },
   "author": "B.Troll",
   "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
   "bugs": {
     "url": "https://github.com/bradleytroll/svg-logo-maker/issues"
   },
