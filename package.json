@@ -1,0 +1,19 @@
+{
+  "name": "svg-logo-maker",
+  "version": "1.0.0",
+  "description": "\"This application creates logos based on user input.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradleytroll/svg-logo-maker.git"
+  },
+  "author": "B.Troll",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradleytroll/svg-logo-maker/issues"
+  },
+  "homepage": "https://github.com/bradleytroll/svg-logo-maker#readme"
+}
