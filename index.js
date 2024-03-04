@@ -2,6 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const { Circle, Triangle, Square} = require('./lib/shapes');
 
+
 inquirer
     .prompt([
         {
@@ -31,3 +32,20 @@ inquirer
     .then((answers) => console.log(answers))
     .catch((err) => console.log(err))
     
+
+function generateLogo(text, textColor, shape, shapeColor) {
+    const shapes = {
+        circle: Circle,
+        triange: Triangle,
+        square: Square,
+        }
+    
+    const logoText = `<text fill="${textColor}">${text}</text>`;
+        return `${logoText}`
+}
+    
+    
+
+const logo = generateLogo(answers.text, answers.textColor, answers.shape, answers.shapeColor);
+fs.writeFileSync('logo.svg', logo);
+console.log('done')
