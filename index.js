@@ -2,6 +2,18 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const { Circle, Triangle, Square} = require('./lib/shapes');
 
+function generateLogo(text, textColor, shape, shapeColor) {
+    const shapes = {
+        circle: Circle,
+        triangle: Triangle,
+        square: Square,
+        }
+    const newShape = new shapes[shape](shapeColor);
+    const shapeEl = newShape.render();
+    const logoText = `<text fill="${textColor}">${text}</text>`;
+        return `${logoText}${shapeEl}`
+}
+    
 
 inquirer
     .prompt([
@@ -29,23 +41,11 @@ inquirer
             name: "shapeColor",
         },
 ])
-    .then((answers) => console.log(answers))
-    .catch((err) => console.log(err))
-    
-
-function generateLogo(text, textColor, shape, shapeColor) {
-    const shapes = {
-        circle: Circle,
-        triange: Triangle,
-        square: Square,
-        }
-    
-    const logoText = `<text fill="${textColor}">${text}</text>`;
-        return `${logoText}`
-}
+    .then((answers) => {
+        const logo = generateLogo(answers.text, answers.textColor, answers.shape, answers.shapeColor);
+        fs.writeFileSync('logo.svg', logo);
+        console.log('done');
+}).catch((err) => console.log(err));
     
     
-
-const logo = generateLogo(answers.text, answers.textColor, answers.shape, answers.shapeColor);
-fs.writeFileSync('logo.svg', logo);
-console.log('done')
+    
