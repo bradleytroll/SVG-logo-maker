@@ -55,18 +55,20 @@ inquirer
 ])
          .then((answers) => {
             const svgContent = generateSVG(answers.text, answers.textColor, answers.shape, answers.shapeColor);
-            fs.writeFileSync('logo.svg', svgContent);
-            console.log('Generated logo.svg');
+            fs.writeFile('logo.svg', svgContent, (err) => {
+                if (err) {
+                    console.error('Failed to write logo.svg', err);
+                } else {
+                    console.log('Generated logo.svg')
+                }
+            })
         })
         .catch((err) => console.log(err));
 
     
     
     
-    
-    
-    
-    
+
     
     
     
