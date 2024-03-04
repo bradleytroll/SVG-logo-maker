@@ -28,7 +28,6 @@ inquirer
             name: "shapeColor",
         },
 ])
-    .then((answers) => {
-       //Now need to take answers and crate the shapes
-
-    })
+    .then((answers) => console.log(answers))
+    .catch((err) => console.log(err))
+    
