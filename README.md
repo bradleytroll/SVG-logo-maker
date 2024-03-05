@@ -37,9 +37,9 @@ node index.js
 4. View the file with a live server to see the logo.
 
 
-<img src="./assets/inquirer-questions.png" alt="Inquirer Questions" width="400" height="auto">
-<img src="./assets/generated-logo-code.png" alt="Generated Code" width="400" height="auto">
-<img src="./assets/rendered-logo.png" alt="Rendered Logo" width="400" height="auto">
+<img src="./assets/inquirer-questions.png" alt="Inquirer Questions" width="600" height="auto">
+<img src="./assets/generated-logo-code.png" alt="Generated Code" width="600" height="auto">
+<img src="./assets/rendered-logo.png" alt="Rendered Logo" width="600" height="auto">
 
 
 ## Credits
