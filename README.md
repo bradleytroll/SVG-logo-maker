@@ -37,9 +37,9 @@ node index.js
 4. View the file with a live server to see the logo.
 
 ```md
-![Inquirer Questions](./assets/inquirer-questions.png)
-![Generated Code](./assets/generated-logo-code.png)
-![Rendered Logo](./assets/rendered-logo.png)
+[Inquirer Questions](./assets/inquirer-questions.png)
+[Generated Code](./assets/generated-logo-code.png)
+[Rendered Logo](./assets/rendered-logo.png)
 ```
 
 
