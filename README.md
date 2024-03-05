@@ -66,4 +66,5 @@ npm test
 ## Video Walkthrough
 
 Click the link below to see a video demonstation of this application.
-[Video Walkthrough](https://...)
+
+[Video Walkthrough](https://drive.google.com/file/d/1BbqYD4UCqgnXNmdGPz862WbAV9M0nvIM/view?usp=drive_link)
