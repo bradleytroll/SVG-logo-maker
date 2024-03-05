@@ -15,6 +15,12 @@ SVG Logo Maker is a Node.js application that allows users to create custom logos
 
 ## Installation
 
+Make sure Node.js is installed on your computer. Then, follow these steps:
+1. Clone the repo to your machine. 
+```md
+git clone http://github.com/bradleytroll/svg-logo-maker.git
+```
+
 ## Usage
 
 ## Credits
