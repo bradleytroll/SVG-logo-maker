@@ -1,7 +1,9 @@
+// Declarations bring in inquirere, require the use of fs, and imports the modules from shapes.js.
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { Circle, Triangle, Square} = require('./lib/shapes');
 
+// Creates function that passes in responses from users to generate the logo, including the logo text, text color, shape, and shape color. Also formats the logo when rendered. Uses switch/case to allow options ofr shape based on user input. 
 function generateSVG(text, textColor, shape, shapeColor) {
     const header = '<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">';
     const footer = '</svg>';
@@ -23,7 +25,7 @@ function generateSVG(text, textColor, shape, shapeColor) {
     return `${header}${shapeElement}${textElement}${footer}`;
 }
     
-
+// Uses inquirer to ask the user a series of questions about their logo. Then, the answers are fed into the generateSVG function to create the log and uses fs to write the svg file. 
 inquirer
     .prompt([
         {
