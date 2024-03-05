@@ -36,12 +36,14 @@ node index.js
 3. Look in your directory for a newly-created logo.svg file. 
 4. View the file with a live server to see the logo.
 
-```md
-<img src="./assets/inquirer-questions.png" alt="Alt text" width="100" height="100">
+
+<img src="./assets/inquirer-questions.png" alt="Inquirer Questions" width="100" height="100">
+<img src="./assets/generated-logo-code.png" alt="Generated Code" width="100" height="100">
+<img src="./assets/rendered-logo.png" alt="Rendered Logo" width="100" height="100">
 [Inquirer Questions](./assets/inquirer-questions.png)
 [Generated Code](./assets/generated-logo-code.png)
 [Rendered Logo](./assets/rendered-logo.png)
-```
+
 
 
 ## Credits
